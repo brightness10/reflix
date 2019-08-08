@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import ReactDom from 'react-dom';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import TopNav from './components/TopNav';
+import Landing from './components/Landing';
+import { Container, Button } from '@material-ui/core';
+import Catalog from './components/Catalog';
+
+class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      users: [
+        {name: 'Zohar', color: 'torquise'},
+        {name: 'Rudolf', color: 'grey'},
+        {name: 'Bijo', color: 'yellow'},
+        {name: 'Alex', color: 'blue'},
+        {name: 'Sergey', color: 'green'},
+      ]
+    }
+  }
+
+  render(){
+    const state = this.state
+
+    return (
+      <Router>
+      <div className="App">
+        <Route path='/' component={TopNav} />
+        <Container>
+          <Route exact path='/' render={() => <Landing users={state.users} />} />
+          <Route exact path='/catalog' render={() => <Catalog />} />
+        </Container>
+
+      </div>
+      </Router>
+    );
+  }
 }
 
 export default App;

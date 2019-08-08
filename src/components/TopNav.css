@@ -1,0 +1,19 @@
+.top-nav {
+    display: flex;
+    /* padding: .6rem 0; */
+    border-bottom: 1px solid #222;
+}
+
+.home-link, .catalog-link {
+    margin-right: 2rem;
+    line-height: 3rem;
+}
+
+#logo {
+    margin-left: auto;
+    line-height: 3rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    color: red;
+}

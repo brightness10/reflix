@@ -1,0 +1,12 @@
+.users {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
+.user-box {
+    width: 150px;
+}
+
