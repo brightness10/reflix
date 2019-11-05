@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Reflix
+a React project inspired by Netflix.
+
+<img src="demo/reflix-demo.gif">
 
 ## Available Scripts
 
