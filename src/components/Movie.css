@@ -1,0 +1,30 @@
+.single-movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-to-movie {
+    cursor: pointer;
+}
+
+.movie-card {
+    border-radius: 6px;
+    box-shadow: 0 0 4px #333;
+}
+
+.action-btn {
+    padding: .4rem 1.2rem;
+    margin-top: .4rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    
+    outline: none;
+    background-color: transparent;
+}
+
+.action-btn:hover {
+    border: 1px solid red;
+}

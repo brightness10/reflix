@@ -1,12 +1,19 @@
 .top-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
     display: flex;
-    /* padding: .6rem 0; */
     border-bottom: 1px solid #222;
+    background-color: #000;
 }
 
-.home-link, .catalog-link {
+.home-link, .catalog-link, #budget {
     margin-right: 2rem;
     line-height: 3rem;
+}
+
+#budget.low-funds {
+    color: red;
 }
 
 #logo {
